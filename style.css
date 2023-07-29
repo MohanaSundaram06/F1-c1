@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-flex {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 30px;
+
+  font-size: small;
+}
+.section-flex img {
+  height: 200px;
+  width: 300px;
+}
+
+.section-grid {
+  margin-top: 30px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  grid-template-areas:
+    "a a b c d d"
+    "a a e f g g"
+    "h h i i i i"
+    "h h i i i i";
+}
+.section-grid img {
+  width: 100%;
+  height: 100%;
+}
+.section-grid img:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.grid-img1 {
+  grid-area: a;
+}
+.grid-img2 {
+  grid-area: b;
+}
+.grid-img3 {
+  grid-area: c;
+}
+.grid-img4 {
+  grid-area: d;
+}
+.grid-img5 {
+  grid-area: e;
+}
+.grid-img6 {
+  grid-area: f;
+}
+.grid-img7 {
+  grid-area: g;
+}
+.grid-img8 {
+  grid-area: h;
+}
+.grid-img9 {
+  grid-area: i;
+}
+
+.session-card {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.session-card > div {
+  margin-top: 15px;
+}
+.session-card img {
+  height: 100%;
+}
+
+.section-footer {
+  width: 80%;
+}
+
+footer {
+  height: fit-content;
+  background-color: rgb(242, 245, 246);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: 10px;
+}
